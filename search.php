@@ -64,7 +64,6 @@
 			<?php if(! empty($conf->nomenclature->enabled)) echo "'nomenclature',"; ?>
 			<?php if(! empty($conf->workstationatm->enabled)) echo "'workstation',"; ?>
 			<?php if(! empty($conf->configurateur->enabled)) echo "'configurateur',"; ?>
-
 		];
 
 		$(document).ready(function() {
