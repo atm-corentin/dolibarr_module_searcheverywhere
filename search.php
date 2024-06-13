@@ -52,6 +52,7 @@
 			'product',
             'company',
             'contact',
+			'invoice_supplier',
 			<?php if(! empty($conf->propal->enabled)) echo "'propal',"; ?>
 			<?php if(! empty($conf->commande->enabled)) echo "'order',"; ?>
 			<?php if(! empty($conf->facture->enabled)) echo "'invoice',"; ?>
@@ -63,7 +64,8 @@
 			<?php if(! empty($conf->nomenclature->enabled)) echo "'nomenclature',"; ?>
 			<?php if(! empty($conf->workstationatm->enabled)) echo "'workstation',"; ?>
 			<?php if(! empty($conf->configurateur->enabled)) echo "'configurateur',"; ?>
-        ];
+
+		];
 
 		$(document).ready(function() {
 			$("#btsearch").click(function() {
